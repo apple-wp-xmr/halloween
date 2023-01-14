@@ -1,2 +1,2 @@
 # halloween
-https://devdmitrydev.github.io/halloween/
+https://apple-wp-xmr.github.io/halloween/
